@@ -1,0 +1,297 @@
+/* font-family: 'Montserrat', sans-serif; */
+
+body {
+    /* margin: 20px auto; */
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.hide {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: polygon(0 0, 0 0, 0 0);
+}
+
+
+a:-webkit-any-link {
+    color: initial;
+    cursor: pointer;
+    text-decoration: initial;
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: pink;
+    padding: 32px 95px;
+}
+
+.logo {
+    width: 131px;
+    height: 56px;
+}
+
+.navbar_menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar_menu li {
+    padding: 30px 40px;
+}
+
+.navbar_menu li:hover {
+    /* background-color: white; */
+    border-bottom: 5px solid black;
+}
+
+.search_bt {
+    background-color: white;
+    border: 1px solid gray;
+    padding: 0;
+}
+
+.search_img {
+    width: 30px;
+    height: 30px;
+}
+
+.navbar_toglebar {
+    display: none;
+}
+
+
+@media screen and (max-width: 890px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar_menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .navbar_search {
+        display: none;
+
+        align-self: center;
+    }
+
+    .search_bt {
+        margin-top: 20px;
+    }
+    .navbar_menu li {
+        width: 100%;
+        text-align: center;
+    }
+    .navbar_toglebar { 
+        display: block;
+        position: absolute;
+        right: 35px;
+    }
+    .toogle_img {
+        display: block;
+        width: 40px;
+    }
+
+    .navbar_menu.active {
+        display: flex;
+    }
+    .navbar_search.active {
+        display: flex;
+    }
+}
+
+ 
+
+
+
+.yellow {
+    background-color: #ffcf5c;
+    
+}
+
+.hello {
+    display: inline-block;
+    /* vertical-align: top; */
+    padding-top: 40px;
+    width: 470px;
+    margin-top: 120px;
+}
+
+.hello h2 {
+    display: block;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.hello strong {
+    font-size: 100px;
+    line-height: 100%;
+    font-weight: 800;
+}
+
+.login {
+    height: 100px;
+    width: 380px;
+    margin-top: 30px;
+}
+
+
+.sign_up, .sign_in {
+    display: inline-block;
+    border: 1px solid #3A2A21;
+    border-radius: 10%;
+    /* border-width: 20px; */
+    padding: 18px 40px;
+    /* margin-top: 20px; */
+    /* margin-right: 5px; */
+    /* box-sizing: border-box; */
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+/* 이렇게 쓰면 배경만 #3A2A21 요 색깔로 바뀜 왜??!
+.sing_up a {
+    background-color: #3A2A21;
+    color: #FFFFFF;
+} */
+
+a.sign_up {
+    background-color: #3A2A21;
+    color: #FFFFFF;
+}
+
+
+.class {
+    /* position: absolute;
+    top: 200px;
+    right: 500px; */
+    /* margin-left: 400px; */
+    background-image: url(/images/mbti.png);
+    /* position: relative; */
+    display: inline-block;
+    /* width: 124px; */
+    /* height: 441px; */
+
+    position: relative;
+    top: -250px;
+    right: -400px;
+}
+
+
+.class_mbti {
+    /* position: absolute; */
+    display: block;
+    height: 224px;
+    /* position: relative; */
+}
+
+dl{
+    display: inline-block;
+    padding: 50px 0px;
+}
+
+.frontend_lang {
+    text-align: left;
+}
+
+.define {
+    margin: 0px 12px;
+    display: inline-block;
+    /* border: 1px solid pink; */
+    width: 20%;
+}
+
+.frontend_lang .define+.define {
+    margin-left: 320px;
+    padding-left: 20px;
+}
+
+dt {
+    padding-left: 18px;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+
+dd {
+    display: list-item;
+    list-style-type: disc;
+    color: #767676;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.left {
+    display: inline-block;
+}
+
+.today {
+    border: 1px solid red;
+    height: 1200px;
+
+}
+
+figcaption strong {
+    font-size: initial;
+    line-height: initial;
+    font-weight: initial;
+}
+
+.left {
+    height: 1200px;
+    border: 1px solid red;
+    width:42%;
+    vertical-align: auto;
+}
+.mura {
+    background-image: url(/images/뮤라\ 1.png);
+    background-size: cover;
+    /* border-width: 600px; */
+    font-size: 5px;
+    border: 1px solid red;
+    height: 45%;
+}
+
+.soulbear {
+    background-image: url(/images/소울곰_애벌래\ 1.png);
+    background-size: cover;
+    border: 1px solid red;
+    height: 45%;
+}
+
+.gary {
+    background-image: url(/images/개리_퇴근\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* max-width: 600px;
+    max-height:1200px; */
+    vertical-align: top;
+    display: inline-block;
+    border: 1px solid greenyellow;
+    width:57%;
+    height: 1200px
+}
+
+.today h2 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: polygon(0 0, 0 0, 0 0);
+ }
